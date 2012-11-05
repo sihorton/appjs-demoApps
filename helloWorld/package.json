@@ -1,0 +1,8 @@
+{
+    "name": "helloWorld",
+    "version": 0.1,
+    "moduleUrl": "http://appjs.delightfulsoftware.com/node_modules/",
+    "appUpdateUrl": "http://appjs.delightfulsoftware.com/example-apps/helloWorld.appjs",
+    "silentUpdates": true,
+    "appdeps": {}
+}
