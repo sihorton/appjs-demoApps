@@ -1,0 +1,30 @@
+{
+    "name": "new-example",
+    "version": 0.1,
+    "moduleUrl": "http://appjs.delightfulsoftware.com/node_modules/",
+    "appUpdateUrl": "http://appjs.delightfulsoftware.com/example-apps/new-example.txt",
+    "silentUpdates": true,
+    "appdeps": {
+        "appjs": {
+            "name": "appjs",
+            "version": "0.0.19",
+            "platforms": {
+                "win32": "win32"
+            }
+        },
+        "appjs-win32": {
+            "name": "appjs-win32",
+            "version": "0.0.19",
+            "platforms": {
+                "win32": "win32"
+            }
+        },
+        "mime": {
+            "name": "mime",
+            "version": "1.2.5",
+            "platforms": {
+                "win32": "win32"
+            }
+        }
+    }
+}
