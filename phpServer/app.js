@@ -23,12 +23,10 @@ var phpRouter = function router(request, response, next){
 				response.send(200,mimetype,stdout);
 			});
 		} else {
-			//alternative is to call next(); and let another router handle normal files.
-			//just return contents.
+			//alternative is to call next() and let another router handle normal files.
 			console.log('serving:'+'/content/'+url.substring(1));
 			fs.readFile(__dirname+'/content/'+url.substring(1),function(err,buffer) {
 				if (err) {
-				
 					response.send(500,'text/plain',new Buffer("500: Internal Server Error\n"+err, "utf-8"));
 				} else {
 					response.send(200,mimetype,buffer);
@@ -41,9 +39,6 @@ var phpRouter = function router(request, response, next){
 };
 
 app.router.use(phpRouter);
-
-//app.serveFilesFrom(__dirname + '/content');
-//app.router.use(require('./packagedApp.js')(__dirname + '/example.appjs'));
 
 var window = app.createWindow({
   width  : 640,
