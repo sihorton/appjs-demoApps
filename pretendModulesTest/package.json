@@ -19,5 +19,23 @@
                 "win32": "win32"
             }
         }
+    },
+    "appjs": {
+        "dependancies": {
+            "pretendModule1": {
+                "name": "pretendModule1",
+                "version": "0.0.1",
+                "platforms": {
+                    "win32": "win32"
+                }
+            },
+            "pretendModule2": {
+                "name": "pretendModule2",
+                "version": "0.0.1",
+                "platforms": {
+                    "win32": "win32"
+                }
+            }
+        }
     }
 }

@@ -1,5 +1,10 @@
-if (!app) {
-	var app = module.exports = require('appjs');
+//packaged application compatability code
+if (typeof iconsDir == "undefined") {
+	//temporary fix for packaged application compatability
+	var iconsDir = __dirname + '/content/icons';
+}
+if (typeof app == "undefined") {
+	app = require('appjs');
 	app.serveFilesFrom(__dirname + '/content');
 }
 

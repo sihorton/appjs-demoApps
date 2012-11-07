@@ -1,8 +1,17 @@
+//packaged application compatability code
+if (typeof iconsDir == "undefined") {
+	//temporary fix for packaged application compatability
+	var iconsDir = __dirname + '/content/icons';
+}
+if (typeof app == "undefined") {
+	app = require('appjs');
+	app.serveFilesFrom(__dirname + '/content');
+}
 
 var window = app.createWindow({
   width  : 640,
   height : 460,
-  icons  : __dirname + '/content/icons'
+  icons  : iconsDir
 });
 
 window.on('create', function(){
